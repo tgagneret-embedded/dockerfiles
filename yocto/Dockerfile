@@ -21,6 +21,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
         e2fslibs-dev libgpgme11-dev \
         libarchive-dev libattr1-dev libcap-dev libfuse-dev libgirepository1.0-dev \
         libsoup2.4-dev autoconf bison libtool liblzma-dev \
+        vim tmux python-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /tmp/* \
