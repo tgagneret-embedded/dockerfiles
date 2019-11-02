@@ -27,6 +27,9 @@ RUN DEBIAN_FRONTEND=noninteractive \
     && rm -rf /tmp/* \
     && rm -rf /var/tmp/*
 
+# Configure tmux to allow scrolling
+RUN echo "set -g mouse on" > /etc/tmux.conf
+
 # Compile and install 'OSTree' and 'repo'
 WORKDIR /home/
 ENV OSTREE_VERSION v2018.9
